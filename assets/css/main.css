@@ -125,10 +125,6 @@ input, select, textarea {
 		font-weight: 400;
 	}
 
-	.cyber-hero {
-		padding-left: 100px; /* Adjust the value as needed */
-	}
-
 	em, i {
 		font-style: italic;
 	}
@@ -378,8 +374,13 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
+			width: 100%; /* was 50% */
+		}
+
+		.row > .col-69 {
 			width: 50%;
 		}
+
 
 		.row > .off-6 {
 			margin-left: 50%;
@@ -503,7 +504,7 @@ input, select, textarea {
 
 		.row.gtr-150 {
 			margin-top: 0;
-			margin-left: -3em;
+			margin-left: 0em; /* -3em */
 		}
 
 			.row.gtr-150 > * {
@@ -2438,6 +2439,26 @@ input, select, textarea {
 	dl {
 		margin: 0 0 2em 0;
 	}
+
+	.skills-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+  		gap: 300px;
+	 }
+
+	ul.skills {
+		list-style: none;
+		padding: 0;
+	 }
+	 
+	 ul.skills li {
+		margin: 10px 0;
+		font-size: 1.2em;
+	 }
+	 
+	 ul.skills i {
+		margin-right: 10px;
+	 }
 
 /* Actions */
 
